@@ -1,0 +1,253 @@
+@font-face {
+  font-family: Shabnam;
+  src: url('../font/shabnam/Shabnam.eot');
+  src: url('../font/shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
+       url('../font/shabnam/Shabnam.woff2') format('woff2'),
+       url('../font/shabnam/Shabnam.woff') format('woff'),
+       url('../font/shabnam/Shabnam.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Shabnam-Light;
+  src: url('../font/shabnam/Shabnam-Light.eot');
+  src: url('../font/shabnam/Shabnam-Light.eot?#iefix') format('embedded-opentype'),
+       url('../font/shabnam/Shabnam-Light.woff2') format('woff2'),
+       url('../font/shabnam/Shabnam-Light.woff') format('woff'),
+       url('../font/shabnam/Shabnam-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	font-family: Shabnam, tahoma, Arial, sans-sarif;
+}
+
+.my-jumbotron .service{
+	padding: 20px 20px;
+}
+
+.my-jumbotron .service-1{
+	background: linear-gradient(
+      rgba(235, 199, 50, 0.9), 
+      rgba(235, 199, 50, 0.9)
+    ), url('../image/bg-1.jpg');
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.my-jumbotron .service-2{
+	background: linear-gradient(
+      rgba(241, 205, 58, 0.90), 
+      rgba(241, 205, 58, 0.90)
+    ), url('../image/bg-2.jpg');
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.my-jumbotron .service-3{
+	background: linear-gradient(
+      rgba(239, 208, 77, 0.90), 
+      rgba(239, 208, 77, 0.90)
+    ), url('../image/bg-3.jpg');
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+
+}
+
+.my-jumbotron .service .header{
+	padding: 10px 0;
+	position: relative;
+	color: #2c3e50;
+}
+
+.my-jumbotron .service .header:after{
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 3px;
+	right: 0;
+	bottom:0;
+	background-color: rgba(44,62,80, 0.2);
+}
+
+.my-jumbotron .service .text-container:before{
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 1px;
+	height: 125px;
+	background-color: rgba(171, 171, 162, 0.7);
+}
+
+.my-jumbotron .service .description{
+	color: #6f6f6f;
+	text-align: justify;
+	font-family: Shabnam-Light, tahoma, Arial, sans-sarif;;
+}
+
+.my-jumbotron .service .image-container{
+	display: flex;
+	padding: 0;
+	padding-top: 20px;
+}
+
+.my-jumbotron .service .image-icon{
+	width: 58px;
+	height: 58px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.my-jumbotron .upper-row{
+	position: relative;
+	margin-top: 15px;
+	padding-top: -15px;
+	color: #333333;
+	text-align: right;
+	direction: rtl;
+}
+
+.my-jumbotron .lower-part{
+	color: white;
+	background-color: #333333;;
+	font-weight: 1000;
+	font-size: 24px;
+	text-align: center;
+	padding: 33px 16px;
+	direction: rtl;
+}
+
+.my-jumbotron .lower-row{
+	position: relative;
+}
+
+.my-jumbotron .lower-row::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	border-bottom: 15px solid #333333;;
+	border-right: 250px solid transparent;
+	margin-top: -10px;
+	z-index: 1;
+}
+
+.my-jumbotron .lower-row::after{
+	content: "";
+	position: absolute;
+	right: 0;
+	border-bottom: 15px solid #333333;;
+	border-left: 250px solid transparent;
+	margin-top: -10px;
+	z-index: 1;
+}
+
+/****** Responsive style *********/
+
+@media only screen and (max-width: 767px){
+	.container{
+		padding-right: 30px;
+		padding-left: 30px;
+		max-width: none;
+	}
+
+	.my-jumbotron{
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.my-jumbotron .service-2{
+		margin-top: -25px;
+		padding-top: 45px;
+	}
+
+	.my-jumbotron .upper-row::before{
+		content: "";
+		position: absolute;
+		top:0;
+		left: 5px;
+		border-bottom: 25px solid rgba(239, 208, 77, 0.90);
+		border-left: 235px solid transparent;
+		margin-top: -25px;
+		z-index: 1;
+	}
+
+	.my-jumbotron .upper-row::after{
+		content: "";
+		position: absolute;
+		top:0;
+		right: 5px;
+		border-bottom: 25px solid rgba(235, 199, 50, 0.9);
+		border-right: 235px solid transparent;
+		margin-top: -25px;
+		z-index: 1;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){
+	.my-jumbotron .service-2{
+		margin-top: -25px;
+		padding-top: 45px;
+	}
+	
+	.my-jumbotron .upper-row::before{
+		content: "";
+		position: absolute;
+		top:0;
+		left: 5px;
+		border-bottom: 25px solid rgba(239, 208, 77, 0.90);
+		border-left: 315px solid transparent;
+		margin-top: -25px;
+		z-index: 1;
+	}
+
+	.my-jumbotron .upper-row::after{
+		content: "";
+		position: absolute;
+		top:0;
+		right: 5px;
+		border-bottom: 25px solid rgba(235, 199, 50, 0.9);
+		border-right: 315px solid transparent;
+		margin-top: -25px;
+		z-index: 1;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.upper-row, .lower-row{
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+	
+	.my-jumbotron .service-2{
+		margin-top: -25px;
+		padding-top: 45px;
+	}
+
+	.my-jumbotron .upper-row::before{
+		content: "";
+		position: absolute;
+		top:0;
+		left: 5px;
+		border-bottom: 25px solid rgba(239, 208, 77, 0.90);
+		border-left: 385px solid transparent;
+		margin-top: -25px;
+		z-index: 1;
+	}
+
+	.my-jumbotron .upper-row::after{
+		content: "";
+		position: absolute;
+		top:0;
+		right: 5px;
+		border-bottom: 25px solid rgba(235, 199, 50, 0.9);
+		border-right: 385px solid transparent;
+		margin-top: -25px;
+		z-index: 1;
+	}
+}
